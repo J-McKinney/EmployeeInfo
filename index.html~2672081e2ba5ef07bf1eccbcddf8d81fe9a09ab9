@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Employee Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- jQuery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Bootstrap CDN-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+ <!-- Firebase References -->
+ <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Employee Information</h1>
+                <p class="lead">We want to know more about you...</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="panel-heading" id="employeeInfo">
+        <h5 class="panel-title"><strong>Current Employees</strong></h5>
+        <table class="table table-hover" id="employeeTable">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Role</th>
+                    <th>Start Date</th>
+                    <th>Months Worked</th>
+                    <th>Monthly Rate ($)</th>
+                    <th>Total Billed ($)</th>
+                </tr>
+            </thead>
+        </table>
+        <tbody>
+            <div class="addEmployee">
+                <h5>Add Employee</h5>
+                <!--Entry Form -->
+                <form>
+                    <div class="form-group">
+                        <label for="train-name-input">Employee Name*</label>
+                        <input class="form-control" id="employeeNameInput" type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Role*</label>
+                        <input class="form-control" id="employeeInputRole" type="text" placeholder="CEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="first-train-time">Start Date (MM/DD/YYYY)*</label>
+                        <input class="form-control" id="startDate" type="number" min="0000" max="2359"
+                            placeholder="12/12/2012">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Monthly Rate*</label>
+                        <input class="form-control" id="monthlyRate" type="number" placeholder="300">
+                    </div>
+                    <button class="btn btn-default" id="addEmployeeBtn" type="submit">Submit</button>
+                </form>
+            </div>
+        </tbody>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity=""
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity=""
+        crossorigin="anonymous"></script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

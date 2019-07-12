@@ -5,12 +5,15 @@ var config = {
     projectId: "employeeinfo-bcec0",
     storageBucket: "employeeinfo-bcec0.appspot.com",
     messagingSenderId: "439651256996",
-    appId: "1:439651256996:web:cee2a882c0b397ef"
+    appId: "1:439651256996:web:9aa0656d1df3c186"
   };
-  var database = firebase.database();
   // Initialize Firebase
   firebase.initializeApp(config);
+  var database = firebase.database();
 
-  $("#addEmployeeBtn").on("click", function() {
-console.log("pushed")
-  })
+$("#addEmployeeBtn").on("click", function (event) {
+    event.preventDefault();
+    console.log("pushed")
+})
+
+console.log("hello")
